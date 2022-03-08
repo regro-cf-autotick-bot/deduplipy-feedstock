@@ -1,5 +1,5 @@
 {% set name = "DedupliPy" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/DedupliPy-{{ version }}.tar.gz
-  sha256: afc2b19876d70d65a1b0d3affb02502a4856b0556a540861cece5b9d663a08dc
+  sha256: ce018188b1f003f0196ee62e3581ea7f0ebdbd8354c16a691e4546b16ced9ebd
 
 build:
   number: 0
   noarch: python
-  script: 
+  script:
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -53,23 +53,23 @@ about:
     <a href="https://deduplipy.readthedocs.io/en/latest/">
       <img src="https://deduplipy.readthedocs.io/en/latest/_images/logo.png" width="15%" height="15%" align="left" />
     </a>
-    
+
     Deduplication is the task to combine different representations of the 
     same real world entity. This package implements deduplication using 
     active learning. Active learning allows for rapid training without 
     having to provide a large, manually labelled dataset.
-    
+
     DedupliPy is an end-to-end solution with advantages over existing solutions:
     - active learning; no large manually labelled dataset required
     - during active learning, the user gets notified when the model 
       converged and training may be finished
     - works out of the box, advanced users can choose settings as 
       desired (custom blocking rules, custom metrics, interaction features)
-    
+
     Developed by [Frits Hermans](https://www.linkedin.com/in/frits-hermans-data-scientist/)
-    
+
     PyPI: [https://pypi.org/project/DedupliPy/](https://pypi.org/project/DedupliPy/)
-  
+
   doc_url: https://deduplipy.readthedocs.io/en/latest/
   dev_url: https://github.com/fritshermans/deduplipy
 
