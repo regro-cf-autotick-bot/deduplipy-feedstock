@@ -1,5 +1,5 @@
 {% set name = "DedupliPy" %}
-{% set version = "0.7.8" %}
+{% set version = "0.7.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/DedupliPy-{{ version }}.tar.gz
-  sha256: 95e85c169c923c2105e35a9dab92a78d60f1824930c1498bff1385dc3a664095
+  sha256: 8692b1e9ef27c68b118e29d8b4af34a85fc61134c7d1e33ef0a8588426802bdf
 
 build:
   number: 0
